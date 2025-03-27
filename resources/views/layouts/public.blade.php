@@ -23,7 +23,8 @@
         <div class="bg-[#eeeff1] text/50 dark:bg-black dark:text-white/50">
             <div class="relative min-h-screen flex flex-col items-center justify-center selection:bg-[#FF2D20] selection:text-white">
              <div class="relative w-full max-w-2xl px-6 lg:max-w-7xl">
-            <header class="top-0 left-0 w-full bg-[#725304] py-6 shadow-md text-white z-50">
+             <header class="top-0 left-0 w-full bg-[#725304] py-4 shadow-md rounded-b-lg text-white z-50">
+
             <div class="container mx-auto flex items-center justify-between px-6">
                     <div class="flex items-center">
                         <img src="{{ asset('images/logo.png') }}" alt="Logo" class="h-6 lg:h-8 w-auto">

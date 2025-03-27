@@ -3,7 +3,7 @@
 
 @section('content')                
     <div class="relative bg-cover bg-center text-white py-20"style="background-image: url('{{ asset('images/contact.jpg') }}');         background-color: rgba(0, 0, 0, 0.4);">        
-    <div class="container mx-auto flex flex-col md:flex-row items-center">
+    <div class="container mx-auto flex flex-col md:flex-row items-center px-6">
             <!-- Left Side (Contact Info) -->
             <div class="w-full md:w-2/3 text-center md:text-left px-4">
                 <h1 class="text-3xl font-semibold mb-6">Contact Us</h1>

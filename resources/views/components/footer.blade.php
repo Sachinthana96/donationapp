@@ -21,7 +21,7 @@
         <div>
             <h3 style="font-size: 0.9rem; text-transform: uppercase; color: black;font-weight: bold;">Follow us</h3>
             <div>
-                <a href="#" style="margin-right: 10px; color: lightgray;">Facebook</a>
+                <a href="#" style="margin-right: 10px; color: lightgray;"> <img src="{{ asset('images/facebook.png') }}" alt="Facebook" class="h-6 lg:h-6 w-auto"></a>
                 <a href="#" style="margin-right: 10px; color: lightgray;">Twitter</a>
                 <a href="#" style="margin-right: 10px; color: lightgray;">LinkedIn</a>
                 <a href="#" style="color: lightgray;">Instagram</a>
