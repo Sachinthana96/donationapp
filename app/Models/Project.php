@@ -9,17 +9,34 @@ class Project extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['pname', 'description', 'start_date', 'end_date', 'items_required'];
+    protected $fillable = ['pname', 'description', 'start_date', 'end_date', 'items_required', 'status'];
 
-    // A project has many reports
     public function reports()
     {
         return $this->hasMany(Report::class);
     }
 
-    // A project can have multiple donation histories
+    // public function donations()
+    // {
+    //     return $this->hasMany(DonationHistory::class);
+    // }
+
+    public function items()
+    {
+        return $this->hasMany(Item::class);
+    }
+
+    public static function boot()
+    {
+        parent::boot();
+
+        static::deleting(function ($project) {
+            $project->items()->delete();
+        });
+    }
+
     public function donations()
     {
-        return $this->hasMany(DonationHistory::class);
+        return $this->hasMany(Donation::class);
     }
 }
